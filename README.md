@@ -4,6 +4,7 @@ Hello! This is my Fourth Project with the Code Institute and I have created a fo
 
 This site has been centred around a centric database and allows full CRUD functionality. The site also ensures role based permissions to seperate user functionality and restrict certain content. 
 
+
 ---
 
 live website link here
@@ -45,11 +46,15 @@ To create my wireframes I used Balsamiq, which is a free to use wireframe softwa
 * [Index page tablet wireframe](/assets/wireframes/tablet-index.png)
 * [Index page mobile wireframe](/assets/wireframes/recipe-detail-mobile.png)
 
+My index page aims to capture the users by being visually attractive and have a clear structure. My index page aims to be simple in layout with clear indication of what time site aim is. 
+
 #### Recipes Page:
 
 * [Recipe page desktop wireframe](assets/wireframes/desktop-recipes-overview.png)
 * [Recipe tablet desktop wireframe](assets/wireframes/tablet-recipes-overview.png)
 * [Recipe mobile desktop wireframe](assets/wireframes/mobile-recipe-overview.png)
+
+My recipes page section should be clearly structured in meal time oder (Breakfast, dinner, tea, treats). This should allow ease of navigation and should help users narrow their search field without needing the known the exact recipe they are after. This page should be again visually beautiful through colours and animations. 
 
 #### Recipe instructions:
 
@@ -57,8 +62,11 @@ To create my wireframes I used Balsamiq, which is a free to use wireframe softwa
 * [Individual recipe instructions page tablet wireframe](assets/wireframes/tablet-recipe-steps.png)
 * [Individual recipe instructions page mobile wireframe](assets/wireframes/mobile-recipe-steps.png)
 
+The recipe instructions should be again simple in design and well structured. This should include unordered bullet points for the ingredients and numbered bullet points for the instructions so user can clearly distinguish each section. Information on this page needs to be clear and concise for readability. 
 #### Profile Page:
 
 * [Profile page desktop wireframe](assets/wireframes/desktop-profilepage.png)
 * [Profile page tablet wireframe](assets/wireframes/tablet-profilepage.png)
 * [Profile page mobile wireframe](assets/wireframes/mobile-profilepage.png)
+
+The profile page aims to be a hub where users can edit and delete their wn profiles. This should act as a page where they can easily navigate to previous recipes they have liked and their own recipes they have added to the website. 
