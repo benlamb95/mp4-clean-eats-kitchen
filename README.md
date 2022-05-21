@@ -70,3 +70,36 @@ The recipe instructions should be again simple in design and well structured. Th
 * [Profile page mobile wireframe](assets/wireframes/mobile-profilepage.png)
 
 The profile page aims to be a hub where users can edit and delete their wn profiles. This should act as a page where they can easily navigate to previous recipes they have liked and their own recipes they have added to the website. 
+
+---
+
+#### Technologies Used
+
+* HTML
+    * HTML was used as the base language for the templates created for the site.
+
+* CSS
+    * Custom css style was used to create my own look and presentation of the site to avoid the site looking to much like a bootstrap site.
+
+* Bootstrap 5.13
+    * Bootstrap was used for general layout and ease of create elements within the site with its predefined templates.
+
+* Jinja/Django Templating
+    * Jinja/Django templating language was utilised to create HTML, XML or other markup formats that are returned to the user via an HTTP response
+
+* JavaScript
+    * To create custom functionality and create resposive elements and interfaces for the user
+
+* Python
+    
+* Django
+    * Python Framework
+    * Django AllAuth 
+
+* Heroku
+    * Was used as the cloud based platform to deploy the site.
+
+* Heroku PostgreSQL
+    * Heroku PostgreSQL was used as the database for this project during development and in production.
+
+
