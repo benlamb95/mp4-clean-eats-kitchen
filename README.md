@@ -35,7 +35,7 @@ live website link here
 
 
 
-## Skeleton Plane
+## The Skeleton Plane
 ---
 ### Wireframes
 To create my wireframes I used Balsamiq, which is a free to use wireframe software. I wanted to created my basic wireframes for the three main screen widths such as Desktop, Tablet and Mobile. In order to help my design thinking process I created the 4 main pages for mty site so I can follow a similar style for my other smaller pages. Please follow the links below to view each wireframe individually.
