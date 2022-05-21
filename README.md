@@ -35,6 +35,30 @@ live website link here
 
 
 ## Skeleton Plane
-
+---
 ### Wireframes
-To create my wireframes I used Balsamiq, which is a free to use wireframe software. I wanted to created my basic wireframes for the three main screen widths such as Desktop, Tablet and Mobile. 
+To create my wireframes I used Balsamiq, which is a free to use wireframe software. I wanted to created my basic wireframes for the three main screen widths such as Desktop, Tablet and Mobile. In order to help my design thinking process I created the 4 main pages for mty site so I can follow a similar style for my other smaller pages. Please follow the links below to view each wireframe individually.
+
+#### Index page:
+
+* [Index page desktop wireframe](/assets/wireframes/desktop-index.png)
+* [Index page tablet wireframe](/assets/wireframes/tablet-index.png)
+* [Index page mobile wireframe](/assets/wireframes/recipe-detail-mobile.png)
+
+#### Recipes Page:
+
+* [Recipe page desktop wireframe](assets/wireframes/desktop-recipes-overview.png)
+* [Recipe tablet desktop wireframe](assets/wireframes/tablet-recipes-overview.png)
+* [Recipe mobile desktop wireframe](assets/wireframes/mobile-recipe-overview.png)
+
+#### Recipe instructions:
+
+* [Individual recipe instructions page desktop wireframe](assets/wireframes/desktop-recipes-steps.png)
+* [Individual recipe instructions page tablet wireframe](assets/wireframes/tablet-recipe-steps.png)
+* [Individual recipe instructions page mobile wireframe](assets/wireframes/mobile-recipe-steps.png)
+
+#### Profile Page:
+
+* [Profile page desktop wireframe](assets/wireframes/desktop-profilepage.png)
+* [Profile page tablet wireframe](assets/wireframes/tablet-profilepage.png)
+* [Profile page mobile wireframe](assets/wireframes/mobile-profilepage.png)
