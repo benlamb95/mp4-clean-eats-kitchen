@@ -73,10 +73,16 @@ The profile page aims to be a hub where users can edit and delete their wn profi
 
 ---
 
+### Database Schema
+
+To create my back end-database I have used the built in postgresql from Heroku. I have designed my database using [drawSQL](https://drawsql.app/), this is a free to use software however quite limited, as some fields didnt allow me to overwrite them, such as, Image fields. To help with the authentication Django has a built in user Model Allauth which helps saving time creating my own Model.  
+
+I have created my own user profile model, as this will be needed to allow users to create their own recipes. I have then split the recipe for Ingredients and Steps because a recipe could have many different steps and ingredients. To help with this logic I used [sqlservercentral](https://www.sqlservercentral.com/forums/topic/database-design-for-storing-recipes) & [dev.to](https://dev.to/amckean12/designing-a-relational-database-for-a-cookbook-4nj6).  
+![Database Diagram](/assets/wireframes/database-design.png)
 #### Technologies Used
 
 * HTML
-    * HTML was used as the base language for the templates created for the site.
+    * HTML was used as the base language for the templates created for the site. 
 
 * CSS
     * Custom css style was used to create my own look and presentation of the site to avoid the site looking to much like a bootstrap site.
