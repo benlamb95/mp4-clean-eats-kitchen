@@ -33,6 +33,20 @@ live website link here
 
 ## UX
 
+### The Strategy Plane  
+
+Clean eats kitchen is a friendly and social recipe sharing platform, which should help connect fellow foodies around the world. The elements and design of the website is to be attractive and enjoyable, whilst ensuring users can follow instructions in a clear and concise manner.  
+
+#### Sites ideal user 
+- Food lover looking to share their healthy recipes with others
+- Food lover looking for recipe inspiration
+- People with a healthy eating diet and lifestyle (e.g. Gym)
+- Someone wishing to connect to foodies online
+#### Site Goals
+- To provide users with a website to find healthy recipes
+- To provide users with a website to share their own recipes
+- To provide users with a website to discover new recipes
+- To provide users with a website where they can communicate with other users in a friendly environment
 
 
 ## The Skeleton Plane
