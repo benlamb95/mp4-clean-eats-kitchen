@@ -15,10 +15,10 @@ class RecipeStep(admin.StackedInline):
     extra = 0
 
 
-@admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     fieldsets = []
     inlines = [RecipeIngredientInline, RecipeStep]
+    prepopulated_fields = {'slug': ('title',)}
 
 
 @admin.register(Comment)
@@ -33,5 +33,6 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 
+admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(RecipeIngredient)
 admin.site.register(Step)
