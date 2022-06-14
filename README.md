@@ -121,3 +121,9 @@ I have created my own user profile model, as this will be needed to allow users 
 
 * Heroku PostgreSQL
     * Heroku PostgreSQL was used as the database for this project during development and in production.
+
+## Credits
+
+* A lot of my inspiration was taken from the Code Institute Django walk through project.
+* [CodingEntrepeneurs](https://www.youtube.com/playlist?list=PLEsfXFp6DpzRMby_cSoWTFw8zaMdTEXgL) YouTube walkthrough.
+* [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) YouTube walkthrough.

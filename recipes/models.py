@@ -1,13 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Added"))
 
 
 class Recipe(models.Model):
-    owner = models.ForeignKey(User, 
+    """Recipe Model"""
+    owner = models.ForeignKey(User,
                               on_delete=models.CASCADE,
                               null=False,
                               blank=False,
@@ -37,6 +38,29 @@ class Recipe(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(Recipe, self).save(*args, **kwargs)
+
+
+class RecipeIngredient(models.Model):
+    """Ingredient Model"""
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    ingredient = models.CharField(max_length=100, blank=False, null=False)
+    quantity = models.CharField(max_length=40, blank=False, null=False)
+    calories = models.CharField(max_length=40, blank=False, null=False)
+    protein = models.CharField(max_length=40, blank=False, null=False)
+    carbs = models.CharField(max_length=40, blank=False, null=False)
+    fat = models.CharField(max_length=40, blank=False, null=False)
+
+    def __str__(self):
+        return str(self.ingredient)
+
+
+class Step(models.Model):
+    '''Steps model'''
+    step = models.CharField(max_length=500, blank=False, null=False)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.step)
 
 
 class Comment(models.Model):
