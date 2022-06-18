@@ -22,7 +22,42 @@ body {
 }
 
 .navbar-brand {
-    
+    background-color: #878e76;
+    color: #fafafa;
+    transform: skew(-20deg);
+    padding: 5px;
+}
+
+.navbar-brand:hover {
+    color: #fafafa;
+}
+
+.nav-item a {
+    color: #878e76;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav-item a::after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: #878e76;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .45s ease;
+}
+
+.nav-item a:hover {
+    color: #878e76;
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 
@@ -32,7 +67,7 @@ body {
 .three-reasons-container {
     background-color: #878e76;
     color:#fafafa;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
