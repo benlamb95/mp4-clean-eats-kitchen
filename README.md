@@ -48,6 +48,44 @@ Clean eats kitchen is a friendly and social recipe sharing platform, which shoul
 - To provide users with a website to discover new recipes
 - To provide users with a website where they can communicate with other users in a friendly environment
 
+### Epics
+
+1. Initial Django setup
+2. User recipes
+3. Recipe searching
+4. Recipe viewing
+5. User Profile
+6. Recipe Create
+7. Recipe Edit
+8. Recipe Delete
+
+Of the 8 User Epics I created 16 user stories to to develop these further and I categorised into 4 sections; Must have, Should have, Could have 
+and won't have. From the 16 user stories 9 would be categorised as must have which equates to roughly 56% of this iteration. To manage this I have linked all user stories to my [kanban board](https://github.com/benlamb95/mp4-clean-eats-kitchen/projects/2). This has been my first time getting to grips with an agile working and planning the iterations by my self.
+
+### User Stories
+
+#### As a SuperUser:
+- I can create, read, update and delete posts so that the website contains recipes relevant to the goals of its target audience
+- I can approve users comments to ensure they are moderated for hate and distasteful comments
+
+#### As a site User:
+- I can view recipes clearly in a structured view with site pagination so that I can easily find the recipe I want
+- I can view recipes clearly so that I can select one to follow
+- I can clearly understand what the purpose of the site is for so that I can decide if I should stay on the website
+- I can I can navigate easily around the site so that I am inquisitive and can find information I want
+- I can create, update and delete my own profile so that I can log in to the site
+- I can search for a recipe with keywords so that narrow my search for the recipe I am looking for
+- I can search for other users profiles so that I can find out more about that user
+
+#### As a registered User:
+- I can save other peoples recipes so that they can be saved in my profile for ease of access in the future
+- I can Like and unlike a recipe so that I can interact with other recipes
+- I can leave comments on recipes so that I can ask questions and leave feedback for others
+- I can Create, update and delete recipes so that I can share my own recipes with others
+- I can sign in and out of my profile so that I can prevent other people accessing my account
+- I can update my password so that I can ensure my account is safe
+- I can update my profile with an image and some personal info so that I can customise my profile
+---
 
 ## The Skeleton Plane
 ---
