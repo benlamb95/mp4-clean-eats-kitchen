@@ -60,6 +60,10 @@ body {
     transform-origin: left;
 }
 
+.navbar-toggler-icon {
+    color: #878e76;
+}
+
 
 
 /* --- Three reasons to sign up  --- */
