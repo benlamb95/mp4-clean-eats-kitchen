@@ -1,1 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&display=swap');
+
+body {
+    font-family: 'Bitter', sans-serif;
+    background-color: #fafafa;
+    color: #878e76;
+}
+
+:where(h1, h2, h3, h4, h5, h6){
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* --- Nav bar section --- */
+
+.navbar {
+    background-color: #fafafa;
+}
+
+.navbar-brand {
+    
+}
+
+
+
+/* --- Three reasons to sign up  --- */
+
+.three-reasons-container {
+    background-color: #878e76;
+    color:#fafafa;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;      
+} 
+
+.three-reasons-heading,
+.three-reasons-content {
+    text-align: center;
+    padding: 5px 5px 0px;
+}
+
+@media screen and (max-width: 400px) {
+    .three-reasons-container {
+        height: 70vh;
+    }
+}
+
+

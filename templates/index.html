@@ -11,25 +11,25 @@
 </header>
 
 
-<div class="container-fluid">
+<div class="container-fluid three-reasons-container">
     <div class="row">
-        <div class=" col-md-4">
-            <h4 class="three-reasons-heading uppercase">Who are we?</h4>
-            <p>
+        <div class="three-reasons col-md-4">
+            <h3 class="three-reasons-heading uppercase">Who are we?</h3>
+            <p class="three-reasons-content">
                 Clean Eats Kitchen are a social group of like-minded foodies wanting to share their
                 healthy recipes with the world.
             </p>
         </div>
-        <div class="col-md-4">
-            <h4 class="three-reasons-heading uppercase">Exclusive Recipes</h4>
-            <p>
+        <div class="three-reasons col-md-4">
+            <h3 class="three-reasons-heading uppercase">Exclusive Recipes</h3>
+            <p class="three-reasons-content">
                 All our recipes have been created by our very own members with one goal- helping others
                 achieve their health goals through food.
             </p>
         </div>
-        <div class="col-md-4">
-            <h4 class="three-reasons-heading uppercase">Friendly Community</h4>
-            <p>
+        <div class="three-reasons col-md-4">
+            <h3 class="three-reasons-heading uppercase">Friendly Community</h3>
+            <p class="three-reasons-content">
                 Here at Clean Eat Kitchen we don't like negativity so dont be afraid to share your
                 recipes!
             </p>
@@ -39,7 +39,7 @@
 
 <div class="row">
     <div class="col-8 offset-2">
-        <h3 class="index-latest text-center">Latest Recipes</h3>
+        <h2 class="index-latest text-center">Latest Recipes</h2>
         <hr>
     </div>
 </div>
@@ -92,7 +92,7 @@
 
 <div class="index-content-wrapper">
     <div class="index-content">
-        <p>Want to start adding your own recipe?</p>
+        <h2>Want to start adding your own recipe?</h2>
         {% if user.is_authenticated %}
         <a class="btn btn-danger delete-button" href="#" role="button">Add Recipe</a>
         {% else %}
