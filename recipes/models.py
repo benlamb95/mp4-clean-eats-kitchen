@@ -70,7 +70,7 @@ class Comment(models.Model):
     recipe = models.ForeignKey(
         Recipe,
         on_delete=models.CASCADE,
-        related_name="recipe"
+        related_name="comments"
     )
     name = models.CharField(max_length=80)
     body = models.TextField()
