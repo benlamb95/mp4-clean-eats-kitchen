@@ -9,6 +9,14 @@ class RecipeList(generic.ListView):
     template_name = 'index.html'
 
 
+class AllRecipes(generic.ListView):
+    """View to show a list of all recipes"""
+    model = Recipe
+    queryset = Recipe.objects.filter(status=1).order_by('title')
+    template_name = 'all_recipes.html'
+    paginate_by = 8
+
+
 class RecipeDetails(View):
     """View to see indivdual recipe"""
     def get(self, request, slug, *args, **kwargs):
