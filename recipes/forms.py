@@ -18,6 +18,6 @@ class RecipeForm(forms.ModelForm):
             'calories',
             'protein',
             'carbs',
-            'fats',
+            'fat',
             'ingredients',
         )
