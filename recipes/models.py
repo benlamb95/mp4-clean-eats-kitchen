@@ -23,6 +23,10 @@ class Recipe(models.Model):
                                null=False, default=0)
     carbs = models.CharField(max_length=40, blank=False, null=False, default=0)
     fat = models.CharField(max_length=40, blank=False, null=False, default=0)
+    ingredients = models.TextField(blank=False,
+                                null=False, default='Enter Ingredients')
+    steps = models.TextField(blank=False,
+                                null=False, default='Enter Steps')
     created_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
@@ -44,25 +48,6 @@ class Recipe(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(Recipe, self).save(*args, **kwargs)
-
-
-class RecipeIngredient(models.Model):
-    """Ingredient Model"""
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
-    ingredient = models.CharField(max_length=100, blank=False, null=False)
-    quantity = models.CharField(max_length=40, blank=False, null=False)
-
-    def __str__(self):
-        return str(self.ingredient)
-
-
-class Step(models.Model):
-    '''Steps model'''
-    step = models.CharField(max_length=500, blank=False, null=False)
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return str(self.step)
 
 
 class Comment(models.Model):
