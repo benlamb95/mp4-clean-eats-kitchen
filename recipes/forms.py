@@ -1,5 +1,6 @@
 from .models import Comment, Recipe
 from django import forms
+from django_summernote.widgets import SummernoteWidget
 
 
 class CommentForm(forms.ModelForm):
@@ -22,3 +23,7 @@ class RecipeForm(forms.ModelForm):
             'ingredients',
             'steps',
         )
+        widgets = {
+            'ingredients': SummernoteWidget(),
+            'steps': SummernoteWidget(),
+        }

@@ -9,10 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
   <!-- FAVICONS-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href=" {% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
   <!-- FONT AWESOME ICONS-->
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <!-- BOOTSTRAP CSS LINK-->
@@ -36,30 +36,32 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
+            <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
           </li>
-          {% if user.is_authenticated %}        
+          {% if user.is_authenticated %}
           <li class="nav-item">
-              <a class="nav-link" href="{% url 'create_recipe' %}">Create Recipe</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="{% url 'create_recipe' %}">Create Recipe</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-          </li>
-          {% else %}          
-          <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_login' %}"><span class="glyphicon glyphicon-log-in"></span>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_signup' %}"><span class="glyphicon glyphicon-user"></span> Sign
+              Up</a>
           </li>
           {% endif %}
-      </ul>
+        </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -68,7 +70,7 @@
     </div>
   </nav>
 
-  
+
   <!--MAIN CONTENT OF PAGE-->
   <main class="flex-shrink-0 main-bg">
     {% block content %}
@@ -84,22 +86,28 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://en-gb.facebook.com/" role="button" target=”_blank”><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://en-gb.facebook.com/" role="button"
+          target=”_blank”><i class="fab fa-facebook-f"></i></a>
 
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=en" role="button" target=”_blank”><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=en" role="button"
+          target=”_blank”><i class="fab fa-twitter"></i></a>
 
         <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.co.uk/" role="button" target=”_blank”><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.co.uk/" role="button"
+          target=”_blank”><i class="fab fa-google"></i></a>
 
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button" target=”_blank”><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+          target=”_blank”><i class="fab fa-instagram"></i></a>
 
         <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/benjamin-lamb-b03991207/" role="button" target=”_blank”><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/benjamin-lamb-b03991207/"
+          role="button" target=”_blank”><i class="fab fa-linkedin-in"></i></a>
 
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/benlamb95" role="button" target=”_blank”><i class="fab fa-github"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/benlamb95" role="button"
+          target=”_blank”><i class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
@@ -113,11 +121,14 @@
     <!-- Copyright -->
   </footer>
 
-
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <!-- my js link -->
+  <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>
