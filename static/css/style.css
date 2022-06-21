@@ -211,6 +211,13 @@ body {
     }
 }
 
+/* --- Recipe Cards  --- */
+
+.recipe-img > img {
+    max-height: 450px;
+    width: 450px;
+}
+
 
 footer {
     margin-top: auto;

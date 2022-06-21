@@ -8,8 +8,9 @@ from .forms import CommentForm, RecipeForm
 
 class RecipeList(generic.ListView):
     model = Recipe
-    queryset = Recipe.objects.filter(status=1).order_by('-created_on')[0:8]
+    queryset = Recipe.objects.filter(status=1).order_by('-created_on')[0:3]
     template_name = 'index.html'
+    
 
 
 class AllRecipes(generic.ListView):
