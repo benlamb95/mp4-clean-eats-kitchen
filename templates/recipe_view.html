@@ -15,9 +15,9 @@
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in recipe.recipe_image.url %}
                 <img src="https://res.cloudinary.com/dbyq9he7h/image/upload/v1655543716/paceholder-default_gc6n2g.jpg"
-                    max-height="450px" width="100%">
+                    width="100%">
                 {% else %}
-                <img src=" {{ recipe.recipe_image.url }}" max-height="450px" width="100%">
+                <img src=" {{ recipe.recipe_image.url }}" width="100%">
                 {% endif %}
             </div>
         </div>

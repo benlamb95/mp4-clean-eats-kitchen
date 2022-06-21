@@ -213,11 +213,6 @@ body {
 
 /* --- Recipe Cards  --- */
 
-.recipe-img > img {
-    max-height: 450px;
-    max-width: 450px;
-}
-
 @media screen and (max-width: 500px) {
     .recipe-img > img {
         width: 100%;
