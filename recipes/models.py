@@ -24,9 +24,9 @@ class Recipe(models.Model):
     carbs = models.CharField(max_length=40, blank=False, null=False, default=0)
     fat = models.CharField(max_length=40, blank=False, null=False, default=0)
     ingredients = models.TextField(blank=False,
-                                null=False, default='Enter Ingredients')
+                                   null=False, default='Enter Ingredients')
     steps = models.TextField(blank=False,
-                                null=False, default='Enter Steps')
+                             null=False, default='Enter Steps')
     created_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(

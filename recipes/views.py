@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Recipe
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
 
 
 class RecipeList(generic.ListView):
@@ -73,8 +74,29 @@ class RecipeDetails(View):
         )
 
 
-class RecipeLike(View):
+class CreateRecipe(View):
+    """Creating a Recipe"""
 
+    def get(self, request):
+        context = {'form': RecipeForm()}
+        return render(request, 'create_recipe.html', context)
+
+    def post(self, request, *args, **kwargs):
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.instance.owner = self.request.user
+            form.save()
+            messages.success(request, "The recipe is awaiting approval...")
+            return redirect('all_recipes')
+        else:
+            messages.error(request,
+                           'Error: Form is not valid. Please re-check')
+            context = {'form': form}
+            return render(request, 'create_recipe.html', context)
+    
+
+class RecipeLike(View):
+    """Liking a Recipe"""
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
         
