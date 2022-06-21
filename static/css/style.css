@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&display=swap');
 
 body {
@@ -6,8 +13,13 @@ body {
     color: #878e76;
     height: 100vh;
     margin: 0;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex; 
-    flex-direction:column;
+    -webkit-box-orient:vertical; 
+    -webkit-box-direction:normal; 
+        -ms-flex-direction:column; 
+            flex-direction:column;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -29,13 +41,14 @@ body {
 
 .navbar {
     background-color: #fafafa;
-    margin-top: 10px;
 }
 
 .navbar-brand {
     background-color: #878e76;
     color: #fafafa;
-    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+            transform: skew(-20deg);
     padding: 5px;
 }
 
@@ -57,9 +70,17 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    transform: scaleX(0);
-    transform-origin: right;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform .45s ease;
+    transition: -webkit-transform .45s ease;
+    -o-transition: transform .45s ease;
     transition: transform .45s ease;
+    transition: transform .45s ease, -webkit-transform .45s ease;
 }
 
 .nav-item a:hover {
@@ -67,32 +88,57 @@ body {
 }
 
 .nav-item a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
 }
 
 .navbar-toggler-icon {
     color: #878e76;
 }
 
+@media screen and (max-width: 310px) {
+    .logo {
+        display: none;
+    }
+  }
+
 /* --- Jumbotron  --- */
 /* --- From the bootstrap walk through section  --- */
 
 .jumbotron {
     height: 90vh;
+    background:-webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(0, 0, 0, 0.5)),
+        to(rgba(0, 0, 0, 0.5))
+      ), url('https://res.cloudinary.com/dbyq9he7h/image/upload/v1655817251/pexels-pixabay-269063_zturzn.jpg') no-repeat center;
+    background:-o-linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://res.cloudinary.com/dbyq9he7h/image/upload/v1655817251/pexels-pixabay-269063_zturzn.jpg') no-repeat center;
     background:linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ), url('https://res.cloudinary.com/dbyq9he7h/image/upload/v1655817251/pexels-pixabay-269063_zturzn.jpg') no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     overflow-x: hidden;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -111,7 +157,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 2;
     width: 30%;
     padding: 20px;
@@ -136,10 +184,19 @@ body {
     background-color: #878e76;
     color:#fafafa;
     height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;      
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;      
 } 
 
 .three-reasons-heading,
@@ -158,4 +215,3 @@ body {
 footer {
     margin-top: auto;
 }
-
