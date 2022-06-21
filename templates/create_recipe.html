@@ -10,6 +10,11 @@
     <div class="col-8 offset-2">
         <h2 class="index-latest body-headers text-center">Create Recipe</h2>
         <hr>
+        <form method="post" class="" enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form | crispy }}
+            <button type="submit" class="bt btn-success">Submit</button>
+        </form>
     </div>
 </div>
 

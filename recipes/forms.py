@@ -20,4 +20,5 @@ class RecipeForm(forms.ModelForm):
             'carbs',
             'fat',
             'ingredients',
+            'steps',
         )
