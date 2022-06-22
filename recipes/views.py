@@ -4,8 +4,10 @@ from django.views import generic, View
 from django.views.generic import ListView, UpdateView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django.urls import reverse_lazy
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
+
 
 
 class RecipeList(generic.ListView):
@@ -98,19 +100,11 @@ class CreateRecipe(View):
 
 
 class UpdateRecipe(UpdateView):
+    """Updating a Recipe"""
     model = Recipe
     template_name = 'update_recipe.html'
-    fields = [
-        'title',
-        'description',
-        'recipe_image',
-        'calories',
-        'protein',
-        'carbs',
-        'fat',
-        'ingredients',
-        'steps',
-    ]
+    form_class = RecipeForm
+    success_url = reverse_lazy('profile')
 
 
 class UserProfileView(LoginRequiredMixin, ListView):
