@@ -1,7 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.views.generic import ListView
+from django.views.generic import ListView, UpdateView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Recipe
@@ -95,6 +95,22 @@ class CreateRecipe(View):
                            'Error: Form is not valid. Please re-check')
             context = {'form': form}
             return render(request, 'create_recipe.html', context)
+
+
+class UpdateRecipe(UpdateView):
+    model = Recipe
+    template_name = 'update_recipe.html'
+    fields = [
+        'title',
+        'description',
+        'recipe_image',
+        'calories',
+        'protein',
+        'carbs',
+        'fat',
+        'ingredients',
+        'steps',
+    ]
 
 
 class UserProfileView(LoginRequiredMixin, ListView):
