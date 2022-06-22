@@ -217,6 +217,7 @@ body {
     height: 60vh;
 }
 
+/* --- https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width --- */
 .card-img-top {
     width: 100%;
     height: 15vw;

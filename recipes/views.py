@@ -1,5 +1,7 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Recipe
@@ -9,8 +11,7 @@ from .forms import CommentForm, RecipeForm
 class RecipeList(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-created_on')[0:3]
-    template_name = 'index.html'
-    
+    template_name = 'index.html' 
 
 
 class AllRecipes(generic.ListView):
@@ -94,7 +95,18 @@ class CreateRecipe(View):
                            'Error: Form is not valid. Please re-check')
             context = {'form': form}
             return render(request, 'create_recipe.html', context)
-    
+
+
+class UserProfileView(LoginRequiredMixin, ListView):
+    """View a created recipe"""
+    template_name = "profile.html"
+    model = Recipe
+    paginate_by = 6
+
+    def get_queryset(self):
+        user = self.request.user
+        return Recipe.objects.filter(owner=user)
+
 
 class RecipeLike(View):
     """Liking a Recipe"""
