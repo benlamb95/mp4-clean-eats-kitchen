@@ -266,21 +266,17 @@ body {
 /* --- Recipe Info  --- */
 
 .recipe-info {
-    height: 20vh;
+    height: 22vh;
 }
 
-.recipe-img > img {
+.recipe-img>img {
     width: 100%;
     height: 50vh;
     object-fit: contain;
 }
 
-.comments {
-    margin: 20px 10px;
-}
-
 @media screen and (max-width: 500px) {
-    .recipe-img > img {
+    .recipe-img>img {
         width: 100%;
         height: 30vh;
         object-fit: contain;
@@ -297,7 +293,7 @@ body {
 
 
 @media screen and (min-width: 500px) {
-    .recipe-img > img {
+    .recipe-img>img {
         width: 100%;
         height: 60vh;
         object-fit: contain;
@@ -308,6 +304,26 @@ body {
     .recipe-info {
         height: 20vh;
     }
+}
+
+/* --- comments section  --- */
+
+.comments {
+    margin: 20px 10px;
+}
+
+.comments-body {
+    background-color: #878e76;
+    color: #fafafa;
+}
+
+.comment-hr {
+    border: 1px solid #fafafa;
+
+}
+
+.comment-info {
+    margin: 10px 5px;
 }
 
 

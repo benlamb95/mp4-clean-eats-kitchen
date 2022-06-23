@@ -47,6 +47,7 @@
                     </p>
                 </div>
             </div>
+            <hr>
             <div class="col-sm-12 col-md-6">
                 <h2 class="text-center">Ingredients</h2>
                 <p>{{ recipe.ingredients | safe}}
@@ -85,9 +86,9 @@
 </article>
 <div class="container">
     <div class="row comments">
-        <div class="col-sm-12 col-md-6 card mb-4 mt-3">
+        <div class="col-sm-12 col-md-6 card mb-4 mt-3 comments-body">
             <h3>Comments:</h3>
-            <div class="card-body">
+            <div class="comment-info">
                 <!--Lists all comments beneath recipe-->
                 {% for comment in comments %}
                 <div>
@@ -99,12 +100,12 @@
                     </p>
                     {{ comment.body | linebreaks }}
                 </div>
-                <hr>
+                <hr class="comment-hr">
                 {% endfor %}
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 card mb-4 mt-3">
-            <div class="card-body">
+        <div class="col-sm-12 col-md-6 card mb-4 mt-3 comments-body">
+            <div class="comment-info">
                 <h3>Leave a comment:</h3>
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
