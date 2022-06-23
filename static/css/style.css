@@ -266,7 +266,7 @@ body {
 /* --- Recipe Info  --- */
 
 .recipe-info {
-    height: 30vh;
+    height: 20vh;
 }
 
 .recipe-img > img {
@@ -286,8 +286,11 @@ body {
         object-fit: contain;
     }
 
+}
+
+@media screen and (max-width: 392px) {
     .recipe-info {
-        height: 20vh;
+        margin-bottom: 20px;
     }
 
 }
@@ -301,7 +304,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
     .recipe-info {
         height: 20vh;
     }
