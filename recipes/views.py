@@ -1,7 +1,8 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.views.generic import ListView, UpdateView
+from django.views.generic.list import ListView
+from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse_lazy
@@ -104,6 +105,13 @@ class UpdateRecipe(UpdateView):
     model = Recipe
     template_name = 'update_recipe.html'
     form_class = RecipeForm
+    success_url = reverse_lazy('profile')
+
+
+class DeleteRecipe(DeleteView):
+    """Deleting a Recipe"""
+    model = Recipe
+    template_name = 'delete_recipe.html'
     success_url = reverse_lazy('profile')
 
 
