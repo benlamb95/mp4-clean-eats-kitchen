@@ -220,7 +220,7 @@ body {
     }
 }
 
-/* --- Recipe Cards  --- */
+/* --- Recipe Cards overview  --- */
 
 .card-body {
     height: 70vh;
@@ -261,6 +261,22 @@ body {
     .card-body {
         height: 70vh;
     }
+}
+
+/* --- Recipe Info  --- */
+
+.recipe-info {
+    height: 30vh;
+}
+
+.recipe-img > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.comments {
+    margin: 20px 10px;
 }
 
 footer {
