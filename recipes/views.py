@@ -11,11 +11,10 @@ from .models import Recipe
 from .forms import CommentForm, RecipeForm
 
 
-
 class RecipeList(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-created_on')[0:3]
-    template_name = 'index.html' 
+    template_name = 'index.html'
 
 
 class AllRecipes(generic.ListView):
@@ -117,6 +116,7 @@ class DeleteRecipe(DeleteView):
 
 
 # https://www.youtube.com/watch?v=AGtae4L5BbI&t=87s
+# https://learndjango.com/tutorials/django-search-tutorial
 def SearchRecipe(request):
     """function to search recipes by title, description and ingredients"""
     if request.method == "GET":
@@ -129,25 +129,6 @@ def SearchRecipe(request):
                       {'searched': searched, 'recipes': recipes})
     else:
         return render(request, 'search_recipe.html', {})
-
-
-# https://learndjango.com/tutorials/django-search-tutorial
-
-    
-    
-    
-    
-    
-    # model = Recipe
-    # template_name = 'search_recipe.html'
-
-    # def get_queryset(self):
-    #     query = self.request.GET["searched"]
-    #     search_list = Recipe.objects.filter(
-    #         Q(title__icontains=query) |
-    #         Q(ingredients__icontains=query)
-    #     )
-    #     return search_list
 
 
 class UserProfileView(LoginRequiredMixin, ListView):
@@ -165,10 +146,10 @@ class RecipeLike(View):
     """Liking a Recipe"""
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
-        
+       
         if recipe.likes.filter(id=request.user.id).exists():
             recipe.likes.remove(request.user)
         else:
             recipe.likes.add(request.user)
-        
+            
         return HttpResponseRedirect(reverse('recipe_view', args=[slug]))
