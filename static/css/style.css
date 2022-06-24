@@ -352,6 +352,20 @@ footer {
 
 /* https://github.com/IanLunn/Hover/blob/master/css/hover.css */
 /* Icon Forward */
+
+.form-button {
+    background-color: #878e76;
+    color: #fafafa;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 355px) {
+    .form-button {
+        margin-bottom: 20px;
+    }
+
+}
+
 .hvr-icon-forward {
     display: inline-block;
     vertical-align: middle;

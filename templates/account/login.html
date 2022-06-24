@@ -14,7 +14,7 @@
 
       <p>{% blocktrans %}Welcome back to Clean Eats Kitchen. To create a recipe, leave a comment or like a post, please
         log in. <br>If you
-        have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+        have not created an account yet, then <a class="link" href="{{ signup_url }}">Sign Up</a>
         first.{% endblocktrans %}</p>
     </div>
   </div>
@@ -26,7 +26,7 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="hvr-icon-forward" type="submit">{% trans "Sign In" %} <i class="fa fa-chevron-circle-right hvr-icon"></i></button>
+        <button class="hvr-icon-forward form-button" type="submit">{% trans "Sign In" %} <i class="fa fa-chevron-circle-right hvr-icon"></i></button>
       </form>
     </div>
   </div>
