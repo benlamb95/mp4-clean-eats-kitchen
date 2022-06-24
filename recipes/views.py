@@ -6,6 +6,7 @@ from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse_lazy
+from django.db.models import Q
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
 
@@ -113,6 +114,21 @@ class DeleteRecipe(DeleteView):
     model = Recipe
     template_name = 'delete_recipe.html'
     success_url = reverse_lazy('profile')
+
+
+# https://learndjango.com/tutorials/django-search-tutorial
+class SearchRecipe(ListView):
+    """Search a created recipe"""
+    model = Recipe
+    template_name = 'search_recipe.html'
+
+    def get_queryset(self):
+        query = self.request.GET.get("searched")
+        search_list = Recipe.objects.filter(
+            Q(title__icontains=query) |
+            Q(ingredients__icontains=query)
+        )
+        return search_list
 
 
 class UserProfileView(LoginRequiredMixin, ListView):
