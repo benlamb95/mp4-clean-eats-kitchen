@@ -11,5 +11,43 @@
     </div>
 </div>
 
+{% if searched %}
+<div class="col-12 mt-3 left">
+    <div class="row">
+        {% for recipe in recipes %}
+        <div class="col-md-4">
+            <div class="card mb-4 card-overview">
+                <div class="card-body">
+                    <a href="{% url 'recipe_view' recipe.slug %}" class="recipe-view-link">
+                        <div class="image-container">
+                            {% if "placeholder" in recipe.recipe_image.url %}
+                            <img class="card-img-top"
+                                src="https://res.cloudinary.com/dbyq9he7h/image/upload/v1655543716/paceholder-default_gc6n2g.jpg">
+                            {% else %}
+                            <img class="card-img-top" src=" {{ recipe.recipe_image.url }}">
+                            {% endif %}
+                            <div class="image-flash">
+                                <p class="author">Author: {{ recipe.owner }}</p>
+                            </div>
+                        </div>
+                        <h2 class="card-title">{{ recipe.title }}</h2>
+                        <p class="card-text">{{ recipe.description }}</p>
+
+                        <hr />
+                        <i class="far fa-heart"></i>
+                        {{ recipe.number_of_likes }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% if forloop.counter|divisibleby:4 %}
+    </div>
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+
+    </div>
+</div>
+{% endif %}
 
 {% endblock %}

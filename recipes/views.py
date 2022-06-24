@@ -116,19 +116,38 @@ class DeleteRecipe(DeleteView):
     success_url = reverse_lazy('profile')
 
 
-# https://learndjango.com/tutorials/django-search-tutorial
-class SearchRecipe(ListView):
-    """Search a created recipe"""
-    model = Recipe
-    template_name = 'search_recipe.html'
-
-    def get_queryset(self):
-        query = self.request.GET.get("searched")
-        search_list = Recipe.objects.filter(
-            Q(title__icontains=query) |
-            Q(ingredients__icontains=query)
+# https://www.youtube.com/watch?v=AGtae4L5BbI&t=87s
+def SearchRecipe(request):
+    """function to search recipes by title, description and ingredients"""
+    if request.method == "GET":
+        searched = request.GET['searched']
+        recipes = Recipe.objects.filter(
+            Q(title__icontains=searched) |
+            Q(ingredients__icontains=searched)
         )
-        return search_list
+        return render(request, 'search_recipe.html',
+                      {'searched': searched, 'recipes': recipes})
+    else:
+        return render(request, 'search_recipe.html', {})
+
+
+# https://learndjango.com/tutorials/django-search-tutorial
+
+    
+    
+    
+    
+    
+    # model = Recipe
+    # template_name = 'search_recipe.html'
+
+    # def get_queryset(self):
+    #     query = self.request.GET["searched"]
+    #     search_list = Recipe.objects.filter(
+    #         Q(title__icontains=query) |
+    #         Q(ingredients__icontains=query)
+    #     )
+    #     return search_list
 
 
 class UserProfileView(LoginRequiredMixin, ListView):

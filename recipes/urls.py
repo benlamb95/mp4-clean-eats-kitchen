@@ -15,6 +15,6 @@ urlpatterns = [
     path('recipes/update/<slug:slug>', views.UpdateRecipe.as_view(), name='update_recipe'),
     path('recipes/delete/<slug:slug>', views.DeleteRecipe.as_view(), name='delete_recipe'),
     path('recipes/my_profile', views.UserProfileView.as_view(), name='profile'),
-    path('search_recipe', views.SearchRecipe.as_view(), name='search_recipe'),
+    path('search_recipe', views.SearchRecipe, name='search_recipe'),
     path('like/<slug:slug>/', views.RecipeLike.as_view(), name='recipe_likes'),
 ]
