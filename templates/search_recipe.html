@@ -49,8 +49,12 @@
         </div>
     {% else %}
         <h3 class="index-latest body-headers text-center">Unfortunately, we currently dont have a recipe containing <strong>{{ searched.capitalize }}</strong>. Please search for something else!</h3>
-</div>
-{% endif %}
-{% endif %}
 
+</div>
+    {% endif %}
+    
+{% else %}
+    <h3 class="index-latest body-headers text-center">Please ensure you have searched for an item!</h3>
+
+{% endif %}
 {% endblock %}
