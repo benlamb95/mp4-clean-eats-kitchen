@@ -105,15 +105,15 @@
 
 <!-- Add a recipe section -->
 
-<div class="index-content-wrapper mt-3 mb-3">
-    <div class="index-content">
+<div class="index-content-wrapper mt-3">
+    <div class="index-content text-center">
         <h2>Want to start adding your own recipe?</h2>
         {% if user.is_authenticated %}
-        <a class="btn btn-danger delete-button" href="#" role="button">Add Recipe</a>
+        <button class="hvr-sweep-to-right" href="#" type="button">Add Recipe</button>
         {% else %}
         <div>
-            <a class="btn btn-success edit-button" href="#" role="button">Sign Up</a>
-            <a class="btn btn-danger delete-button" href="#" role="button">Sign In</a>
+            <button class="hvr-sweep-to-right" href="#" type="button">Sign Up</button>
+            <button class="hvr-sweep-to-right" href="#" type="button">Sign In</button>
         </div>
         {% endif %}
     </div>
