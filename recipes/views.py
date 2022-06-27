@@ -22,7 +22,7 @@ class AllRecipes(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('title')
     template_name = 'all_recipes.html'
-    paginate_by = 8
+    paginate_by = 6
 
 
 class RecipeDetails(View):
