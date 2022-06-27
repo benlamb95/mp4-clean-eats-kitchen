@@ -59,6 +59,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
     messages.INFO: 'alert-info',
@@ -72,7 +73,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 SUMMERNOTE_CONFIG = {
     'width': '100%',
     'toolbar': [
-            ['para', ['ul', 'ol',]],
+            ['para', ['ul', 'ol', ]],
         ],
 }
 
@@ -120,6 +121,7 @@ WSGI_APPLICATION = 'cleaneatskitchen.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
