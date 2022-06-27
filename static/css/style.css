@@ -64,7 +64,7 @@ body {
 
 .nav-item a::after {
     content: '';
-    width: 90%;
+    width: 95%;
     height: 1px;
     background-color: #878e76;
     position: absolute;
@@ -283,6 +283,16 @@ body {
     .card-body {
         height: 70vh;
     }
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }
 
 /* --- Recipe Info  --- */
