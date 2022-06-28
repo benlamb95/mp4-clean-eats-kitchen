@@ -157,7 +157,7 @@ Once I set out my structure of my site I began thinking about colours of my site
 ![Colour palette](static/images/colour-palette.png)  
 
 #### Typography
-
+I used Google fonts to find a suitable font style for my recipe site. I decided to selected two font styles one for my headings and the other for my main body. I used Dosis for my headers which is a Sans-Serif font family and Bitter for the body which is a slab serif typeface. I felt they worked really well together and both allowed a comfortable reading display on any computer or device. 
 
 
 
