@@ -87,6 +87,22 @@ and won't have. From the 16 user stories 9 would be categorised as must have whi
 - I can update my profile with an image and some personal info so that I can customise my profile
 ---
 
+## The Scope Plane
+
+The features planned:
+* Recipes- Create, Read, Update and Delete
+* User Profile- User can register for a profile to create recipes and make comments on others aswell as like
+* Users can log in and out of their profile to ensure no one else can use their profile
+* Search functionality to allow users to find a recipe of their choice quickly and efficiently
+* Commenting and liking of recipes
+* Intuitive design
+* Appealing Site
+
+## The Structure Plane
+I used a flowchart diagram to help visualise how I would want my site structure.  
+
+![Website stucture](static/images/site-flowchart.png)
+
 ## The Skeleton Plane
 ---
 ### Wireframes
