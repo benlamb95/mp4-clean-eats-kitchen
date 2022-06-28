@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:4 %}
+                {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
                 {% endif %}
@@ -109,11 +109,11 @@
     <div class="index-content text-center">
         <h2>Want to start adding your own recipe?</h2>
         {% if user.is_authenticated %}
-        <button class="hvr-sweep-to-right" href="{% url 'create_recipe' %}" type="button">Add Recipe</button>
+        <button class="hvr-sweep-to-right index-links" href="{% url 'create_recipe' %}" type="button">Add Recipe</button>
         {% else %}
         <div>
-            <a class="hvr-sweep-to-right" href="{% url 'account_signup' %}" type="button">Sign Up</a>
-            <button class="hvr-sweep-to-right" href="{% url 'account_login' %}" type="button">Log In</button>
+            <a class="hvr-sweep-to-right index-links" href="{% url 'account_signup' %}" type="button">Sign Up</a>
+            <a class="hvr-sweep-to-right index-links" href="{% url 'account_login' %}" type="button">Sign In</a>
         </div>
         {% endif %}
     </div>

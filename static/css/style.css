@@ -375,6 +375,14 @@ body {
 }
 
 /* Sweep To Right */
+
+.index-links {
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+}
+
 .hvr-sweep-to-right {
     display: inline-block;
     vertical-align: middle;
@@ -420,6 +428,8 @@ body {
 
 footer {
     margin-top: auto;
+    background-color: #878e76;
+    color: #fafafa;
 }
 
 
