@@ -7,11 +7,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&display=swap');
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
 body {
     font-family: 'Bitter', sans-serif;
     background-color: #fafafa;
     color: #0f0f0f;
     height: 100vh;
+    width: 100%;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
