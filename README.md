@@ -101,7 +101,8 @@ The features planned:
 ## The Structure Plane
 I used a flowchart diagram to help visualise how I would want my site structure.  
 
-![Website stucture](static/images/site-flowchart.png)
+![Website stucture](static/images/site-flowchart.png)  
+
 
 ## The Skeleton Plane
 ---
@@ -147,6 +148,11 @@ To create my back end database I have used the built-in PostgreSQL from Heroku. 
 
 I have created my own user profile model, as this will be needed to allow users to create their own recipes. I have then split the recipe for Ingredients and Steps because a recipe could have many different steps and ingredients. To help with this logic I used [sqlservercentral](https://www.sqlservercentral.com/forums/topic/database-design-for-storing-recipes) & [dev.to](https://dev.to/amckean12/designing-a-relational-database-for-a-cookbook-4nj6).  
 ![Database Diagram](/assets/wireframes/database-design.png)
+
+## The Surface Plane
+
+
+
 #### Technologies Used
 
 * HTML

@@ -10,7 +10,7 @@
 body {
     font-family: 'Bitter', sans-serif;
     background-color: #fafafa;
-    color: #878e76;
+    color: #0f0f0f;
     height: 100vh;
     margin: 0;
     display: -webkit-box;
@@ -40,15 +40,15 @@ body {
 /* --- Nav bar section --- */
 
 .navbar {
-    background-color: #fafafa;
+    background-color: #0f0f0f;
 }
 
 .navbar-brand {
     background-color: #878e76;
     color: #fafafa;
-    -webkit-transform: skew(-20deg);
+    /* -webkit-transform: skew(-20deg);
     -ms-transform: skew(-20deg);
-    transform: skew(-20deg);
+    transform: skew(-20deg); */
     padding: 5px;
 }
 
@@ -252,7 +252,7 @@ body {
 
 .card-body > a {
     text-decoration: none;
-    color: #878e76;
+    color: #000000;
 }
 
 @media screen and (max-width: 500px) {
@@ -454,7 +454,7 @@ body {
 
 footer {
     margin-top: auto;
-    background-color: #878e76;
+    background-color: #0f0f0f;
     color: #fafafa;
 }
 
