@@ -429,6 +429,21 @@ body {
     transform: scaleX(1);
   }
 
+
+/* --- Submit button for create recipe  --- */
+
+.submit-btn {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #878e76;
+    color: #fafafa;
+}
+
+.submit-btn:hover {
+    background-color: #fafafa;
+    color: #878e76;
+}
+
 /* --- Footer  --- */
 
 footer {
