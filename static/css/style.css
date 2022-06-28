@@ -13,7 +13,7 @@
          box-sizing: border-box;
 }
 
-body {
+html,body {
     font-family: 'Bitter', sans-serif;
     background-color: #fafafa;
     color: #0f0f0f;
