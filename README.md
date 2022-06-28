@@ -157,7 +157,12 @@ Once I set out my structure of my site I began thinking about colours of my site
 ![Colour palette](static/images/colour-palette.png)  
 
 #### Typography
-I used Google fonts to find a suitable font style for my recipe site. I decided to selected two font styles one for my headings and the other for my main body. I used Dosis for my headers which is a Sans-Serif font family and Bitter for the body which is a slab serif typeface. I felt they worked really well together and both allowed a comfortable reading display on any computer or device. 
+I used Google fonts to find a suitable font style for my recipe site. I decided to select two font styles one for my headings and the other for my main body. I used Dosis for my headers which is a Sans-Serif font family and Bitter for the body which is a slab serif typeface. I felt they worked really well together and both allowed a comfortable reading display on any computer or device.   
+
+#### Images
+I used Pexels which is a free image sharing website once you have set up an account. I felt the images Pexels provide are clean, simple and crisp so they help elevate a websites appearance. I used a background image for the index page to capture the users attention while fitting in with the theme of it being a kitchen worktop. The placeholder image I used was a fruit bowl. I thought this should be used as for one it is an image of healthy food which is one of the main site goals for the site and it is also bright and eye catching. 
+
+## Features
 
 
 
@@ -195,3 +200,15 @@ I used Google fonts to find a suitable font style for my recipe site. I decided 
 * A lot of my inspiration was taken from the Code Institute Django walk through project.
 * [CodingEntrepeneurs](https://www.youtube.com/playlist?list=PLEsfXFp6DpzRMby_cSoWTFw8zaMdTEXgL) YouTube walkthrough.
 * [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) YouTube walkthrough.
+* All other credits used are referenced where appropriate in the given file.
+* Code Institue Tutor support for their advice and patience when things wasn't going so well for me
+
+### Resources
+
+* W3C Schools
+* Google Developer Tools
+* Stack Overflow
+* Pexels
+* Font Awesome
+* Google Fonts
+* Cloudinary- For image storage
