@@ -25,9 +25,11 @@
                                 <div class="image-container">
                                     {% if "placeholder" in recipe.recipe_image.url %}
                                     <img class="card-img-top"
-                                        src="https://res.cloudinary.com/dbyq9he7h/image/upload/v1655543716/paceholder-default_gc6n2g.jpg">
+                                        src="https://res.cloudinary.com/dbyq9he7h/image/upload/v1655543716/paceholder-default_gc6n2g.jpg"
+                                        alt="Placeholder image of fruit bowl">
                                     {% else %}
-                                    <img class="card-img-top" src=" {{ recipe.recipe_image.url }}">
+                                    <img class="card-img-top" src=" {{ recipe.recipe_image.url }}"
+                                        alt="Image of {{ recipe.title }}">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="author">Author: {{ recipe.owner }}</p>
