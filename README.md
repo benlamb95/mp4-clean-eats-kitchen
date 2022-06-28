@@ -151,6 +151,14 @@ I have created my own user profile model, as this will be needed to allow users 
 
 ## The Surface Plane
 
+### Design and Colours 
+
+Once I set out my structure of my site I began thinking about colours of my site. I wanted to keep my website colour scheme to be limited in the amoutn of colours I selected yet still ensure the website looks attractive. I decided to use white and black throughout my site as this has the best contrast to ensure poeple can easily view the content. However i decided to use a sage green (#878e76) to add a dash of colour and make the site more attractive. I did make a last minute design change after looking at a lighthouse report of my site which advised the colours of my sage green and white would be too difficult to see for users, therefore I decided to use black text thorughout my site.  
+![Colour palette](static/images/colour-palette.png)  
+
+#### Typography
+
+
 
 
 #### Technologies Used
