@@ -44,3 +44,11 @@ To test mobile device functionality for the navigation I used an Iphone XS.
 
 ## User Sign In, Sign Out and Sign Up functionaility
 ![Users](static/images/testing/users-schedule.png)  
+
+## Recipe CRUD (Create, read, update and delete)
+![Recipes](static/images/testing/recipe-schedule.png)  
+The recipe CRUD functionality was tested extensively as this is the main focus of my site. I have ensured that a user can only have a recipe added to the site once the admin has accepted it within the django admin panel. Moving forward and within my next iteration I would like to add the functionailty of the admin being able to moderate the recipes within the site rather than having to go to the django admin. 
+
+## Like and commenting on a recipe
+![Likes&Comments](static/images/testing/like-comment-schedule.png)  
+
