@@ -235,7 +235,6 @@ These development ideas can still be seen on my [kanban board](https://github.co
 
 ---
 
-
 ### Technologies Used
 
 * HTML
@@ -264,6 +263,37 @@ These development ideas can still be seen on my [kanban board](https://github.co
 
 * Heroku PostgreSQL
     * Heroku PostgreSQL was used as the database for this project during development and in production.
+
+## Testing
+
+## Deployment
+
+The site was deployed through Heroku and the live link can be found here - [Clean Eats Kitchen](https://clean-eats-kitchen.herokuapp.com/).  
+
+To deploy your own project through Heroku follow the below steps:
+
+* Sign Up/ Log In to Heroku
+* On the Dashboard page select 'New' and the 'Create New App'.
+* Provide your new app a suitable name that hasnt already been taken and click create.
+* This should bring you to the deploy tab and from the submenu at the top navigate to the resources tab.
+* Add your database to the app in the add-ons section. I used 'Heroku Postgres'.
+* Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
+* Within the repository in GitPod create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL from Heroku.
+* Add a secret key to the app using os.environ["SECRET_KEY"] = "your secret key goes here" Add the secret key just created to the Heroku Config Vars as SECRET_KEY for value you have just set.
+* In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url insert the line if os.path.isfile("env.py"): import env remove the insecure secret key with SECRET_KEY = os.environ.get('SECRET_KEY') replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}.
+* In the terminal migrate the models over to the new database and sign up/log in to cloudinary.
+* In cloudinary copy the CLOUDINARY_URL to the clipboard and paste this into the env.py as follows: os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here".
+* In Heroku, add the CLOUDINARY_URL and value copied from the clipboard to the config vars in settings. Also add the KEY - DISABLE_COLLECTSTATIC with the Value - "1". (This must be removed prior to final deployment)
+* Add the cloudinary libraries to the list of installed apps just above above 'django.contrib.staitcfiles' and cloudinary goes below.
+* In the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+* Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
+* Heroku needs to be added to the allowed_hosts list followed by 'localhost'.
+* Create a new file on the top level directory - Procfile. Within this file ensure the following code is added: web: guincorn PROJECT_NAME.wsgi
+* Ensure ALL changes have been added, commited and pushed to GitHub.
+* Return to Heroku and look for the deployment tab. Click Deploy branch manually (this can be changed to automatic at later date)
+* If there are no build log errors you should see a notification advising ' Your App was succesfully deployed' with a link to the live site.
+
+
 
 ## Credits
 
