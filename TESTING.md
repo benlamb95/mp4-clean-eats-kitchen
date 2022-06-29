@@ -21,4 +21,13 @@ Individual screenshots for the PEP8 Validators can be found below:
 * [urls.py](static/images/testing/urls2-pep8.png)
 * [views.py](static/images/testing/views-pep8.png)
 
+## CSS and JavaScript Checker with W3C Online
+
+![W3C and Jshint schedule](static/images/testing/css-js-schedule.png)  
+
+Individual screenshots for the Validators can be found below:
+* [CSS](static/images/testing/css-validator.png)
+
+* [JS](static/images/testing/javascript-validator.png)
+
 ## HTML Checker with W3C Online
