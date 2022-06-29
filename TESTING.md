@@ -36,3 +36,11 @@ For my HTML validator I initially ran into some issues as I tried to input the t
 
 ![HTML](static/images/testing/html-validator.png)  
 The warning related to a section within my footer however this had come from bootsraps footer tempate, therefore I have not touched this code.
+
+## Site Navigation testing  
+![Site Navigation](static/images/testing/site-navigation-schedule.png)  
+
+To test mobile device functionality for the navigation I used an Iphone XS.
+
+## User Sign In, Sign Out and Sign Up functionaility
+![Users](static/images/testing/users-schedule.png)  
