@@ -201,11 +201,42 @@ The user is then presented with the three most recent recipes created by existin
 This is the view for when a user wishes to view all current recipes and is presented the same when a user searches for the recipe. Recipes for larger screens are stacked next to each other in a row of three but as the device screen gets smaller it then stacks 1 item per row. I have seperated the recipe cards enough with a column gap and a feint border.  
 
 ![Recipe Card](static/images/Features/recipe-card.png)  
-The actual card itself is very basic in design. The image of the recipe is the most eye catching as this aims to draw in the user to view the recipe. When a user is hovering over a card the image scales in size. The card also contains the necessary info including the recipe creator, the name of the recipe, a brief description and the number of likes it has. 
+The actual card itself is very basic in design. The image of the recipe is the most eye catching as this aims to draw in the user to view the recipe. When a user is hovering over a card the image scales in size. The card also contains the necessary info including the recipe creator, the name of the recipe, a brief description and the number of likes it has.   
+
+![Recipe View](static/images/Features/recipe-view.png)  
+When a user selects a recipe to follow they will again be present with the title of the recipe, author and the recipe image, this is their to ensure the user knows they have clicked on the correct recipe. The edit and delete links wont be visible if the user isnt registered and isnt the owner of that recipe. The macros and calories are then visible below the recipe image with the recipes description.  
+
+![Recipe View](static/images/Features/recipeview-lower.png)   
+The next section of this page contains the Ingredients and Instructions. They are clearly distinguished and allow a user to follow clearly. Below this is the like functionaility and the comments section which has the comments made on one side and the ability to comment if you are logged in on the other. 
+
+### Create/Edit Recipe Page  
+
+Registered users have the ability to create and edit their own recipes. The pages are clearly laid out with clear titles to help distinguish what information that section requires. I used Summernote which is a text editor to help a user fill out the form but limited its tools to only include bullet points and numbered bullet points to avoid users from adding any unwanted text effects.  
+
+Recipe create top section  
+
+![Recipe View](static/images/Features/creationform-top.png)  
+
+Recipe create bottom section  
+![Recipe View](static/images/Features/creationform-bottom.png)   
+
+### Profile Page  
+Currently the profile page is quite limited and contains the users own recipes they have created themselves for ease of access, should they wish to edit or delete that recipe.  
+![Profile Page](static/images/Features/profile.png)
+
+### Other Features
+* Log-in/Log out page- Simple in design with a button executing the desired function.
+* Sign up page- Simple design form that asks for a users username and and password.
+* Messages- Small notifications pop up to the user for when they: Sign-in, log-out, create a recipe, make a comment. 
+
+## Future Features/ Developments  
+
+These development ideas can still be seen on my [kanban board](https://github.com/benlamb95/mp4-clean-eats-kitchen/projects/2) and would like to include these as a Must have within my next iteration of the site.
+
+---
 
 
-
-#### Technologies Used
+### Technologies Used
 
 * HTML
     * HTML was used as the base language for the templates created for the site. 
