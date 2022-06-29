@@ -34,6 +34,8 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['clean-eats-kitchen.herokuapp.com', 'localhost']
 
+HTMLVALIDATOR_ENABLED = True
+HTMLVALIDATOR_FAILFAST = True
 
 # Application definition
 

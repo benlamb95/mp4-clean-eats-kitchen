@@ -1,4 +1,4 @@
-const faders = document.querySelectorAll('.fade-in')
+const faders = document.querySelectorAll('.fade-in');
 
 // Function to animate item on scroll
 // Help from https://www.youtube.com/watch?v=huVJW23JHKQ&t=318s
@@ -18,11 +18,11 @@ const appearOnScroll = new IntersectionObserver(function(
         }
     });
     
-},appearOptions)
+},appearOptions);
 
 faders.forEach(fader => {
-    appearOnScroll.observe(fader)
-})
+    appearOnScroll.observe(fader);
+});
 
 // Function to remove messages 
 setTimeout(function() {
