@@ -103,6 +103,7 @@ I used a flowchart diagram to help visualise how I would want my site structure.
 
 ![Website stucture](static/images/site-flowchart.png)  
 
+As a site admin it is important that I have full control of what recipes are added to the website as I need to ensure that the recipes are healthy for its target audience, therefore I have made sure any recipes that a registered user trys to add has to be approved by the admin via the admin panel built by django. This is also the same for comments, as the comments that user make should support a welcoming environment and not have any negativety. 
 
 ## The Skeleton Plane
 ---
@@ -163,6 +164,44 @@ I used Google fonts to find a suitable font style for my recipe site. I decided 
 I used Pexels which is a free image sharing website once you have set up an account. I felt the images Pexels provide are clean, simple and crisp so they help elevate a websites appearance. I used a background image for the index page to capture the users attention while fitting in with the theme of it being a kitchen worktop. The placeholder image I used was a fruit bowl. I thought this should be used as for one it is an image of healthy food which is one of the main site goals for the site and it is also bright and eye catching. 
 
 ## Features
+---
+
+### Navigation Bar
+
+The navigation bar which sits at the top of the site is key across all devices and is role based so depending on whether or not you are signed in, it will appear slighlty different. 
+![navBar Desktop](static/images/Features/navbar-full.png)  
+
+The above Nav bar is what users will see if they are on larger screen devices. It has 4 easy to read and understandable links that direct the user in the direction they wish to go. When a user hovers over the links, an underline effect appears under each link to help signify the link they are about to select. On the far right there is a search section which has placeholder text explaining how that search bar can be used.  
+
+![navBar Desktop registered user](static/images/Features/navbarfull-registered.png)  
+The above Nav Bar is for when a user is a registered user and has signed up to the site. It wouldn't make sense for the Nav bar to still display login/Sign up there it changes to logout but also includes a profiles section and create a recipe section.  
+
+![navBar small](static/images/Features/navbar-small.png)  
+
+Having a site that is resposive is vital for it to be a success therefore I used bootstraps nav bar to implement a smaller nav bar that puts all the links within a burger Icon. Once a user clicks this icon the below screenshot will show how the links appear.  
+
+![navBar small](static/images/Features/navbar-expand.png)  
+
+### Footer 
+![Index Page](static/images/Features/footer.png)  
+Like the navigation bar, my footer is present within all of my site. It is very basic in design as it only contains links to socials but ensures these links are open in a seperate tab to ensure the user can find their way back to the site easily.  
+
+
+### Index page 
+![Index Page](static/images/Features/index-herosection.png)  
+
+I wanted the index to be eye capturing and draw a user in whilst also explaining the purpose of the site clearly. To do this I have used an attractive hero image with the title of the site centered with a glass effect to stand out. I have then broken up the site by using a sage green background with white text to make this section stand out with it being the sites purpose.  
+
+![Index Page](static/images/Features/index-lowersection.png)  
+
+The user is then presented with the three most recent recipes created by existing users. This is to entice the user into seeing recipes that have already been made and make them want to look for more within the site. This is then followed up with a rhetorical question which should again try to attract the user to sign up for the site to share their own recipes.  
+
+### All recipes  
+![Recipe Overview](static/images/Features/all-recipes.png)  
+This is the view for when a user wishes to view all current recipes and is presented the same when a user searches for the recipe. Recipes for larger screens are stacked next to each other in a row of three but as the device screen gets smaller it then stacks 1 item per row. I have seperated the recipe cards enough with a column gap and a feint border.  
+
+![Recipe Card](static/images/Features/recipe-card.png)  
+The actual card itself is very basic in design. The image of the recipe is the most eye catching as this aims to draw in the user to view the recipe. When a user is hovering over a card the image scales in size. The card also contains the necessary info including the recipe creator, the name of the recipe, a brief description and the number of likes it has. 
 
 
 
