@@ -31,3 +31,8 @@ Individual screenshots for the Validators can be found below:
 * [JS](static/images/testing/javascript-validator.png)
 
 ## HTML Checker with W3C Online
+
+For my HTML validator I initially ran into some issues as I tried to input the text direct and the validator wouldn't recognise Jinja templating. Therefore I checked via the URI. This is the result:
+
+![HTML](static/images/testing/html-validator.png)  
+The warning related to a section within my footer however this had come from bootsraps footer tempate, therefore I have not touched this code.
