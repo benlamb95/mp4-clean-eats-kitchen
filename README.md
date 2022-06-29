@@ -266,6 +266,14 @@ These development ideas can still be seen on my [kanban board](https://github.co
 
 ## Testing
 
+Testing was done throughout the develpment of this site through terminal print statements, trial and error with Google Dev tools and automatic deployments through Heroku and checking deployments through my own Iphone Xs device. Testing and code validation can be found in the following [TESTING.md](TESTING.md).
+
+### Notable Bugs
+
+* As advised above constant testing was done through a real device rather than simulated through Google Dev tools as I understand this can throw errors. During production I asked my partner to view my site on her mobile (Iphone 12 Max). Unfortunately when viewing my site on this device it wouldn;t show the navigation bar or very little of it. When the burger Icon was selected the drop down menu would push the links out of view. I tried finding a correction for this error by using [autoprefixer](https://autoprefixer.github.io/). I also tried using a tutor help and experience but still they wasn;t able to find the fix for this bug. 
+* Another bug I found within testing was when viewing my site on a mobile there would be some overflow scroll on the x-axis. This became more noticable when I used a black background for my nav bar and footers. I used [Stack Overflow](https://stackoverflow.com/questions/46012482/unwanted-white-space-on-right-side-in-mobile-view) to find a solution which I managed to correct by adding html to the class within my CSS file. 
+* Genral bugs such as URLS not working, CSS styling was all corrected during development.
+
 ## Deployment
 
 The site was deployed through Heroku and the live link can be found here - [Clean Eats Kitchen](https://clean-eats-kitchen.herokuapp.com/).  
