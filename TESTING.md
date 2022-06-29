@@ -52,3 +52,11 @@ The recipe CRUD functionality was tested extensively as this is the main focus o
 ## Like and commenting on a recipe
 ![Likes&Comments](static/images/testing/like-comment-schedule.png)  
 
+
+## Light house scores
+![Lighthouse report](static/images/testing/lighthouse-report.png)  
+The light house report did suggest a poor performace but after looking at the reasons it suggested delivering JS/ CSS inline. This is currently out of my learning scope and something which im currently not aware on how to improve this.  This is also the same for cache policy but again this is something im sure in the future will be something I look at.  
+
+
+
+Back to [README.md](README.md) file.
